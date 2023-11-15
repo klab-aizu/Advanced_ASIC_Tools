@@ -1,0 +1,3 @@
+[submodule "basic_tutorial"]
+	path = basic_tutorial
+	url = git@github.com:klab-aizu/EDAS-Tool-Examples.git
