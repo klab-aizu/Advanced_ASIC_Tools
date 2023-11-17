@@ -2,9 +2,10 @@
 
 This repository provides example code for advanced topics of ASIC design:
 
-1. Post-synthesis simulation
-2. Post-layout simulation
-3. Macro-block layout (OpenRAM or TSV)
+1. Post-synthesis simulation: [post-syn-sim](post-syn-sim)
+2. Post-synthesis simulation with timing:
+3. Post-layout simulation
+4. Macro-block layout (OpenRAM or TSV)
 
 ## Prerequisites
 
