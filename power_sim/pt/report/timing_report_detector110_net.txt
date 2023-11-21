@@ -1,0 +1,53 @@
+Warning: Zero transition time will be used at to pins of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-066)
+Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
+Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (NangateOpenCellLibrary/DFF_X1) state_reg[0]/CK-->Q (max rising_edge) [r/f slew = 0.4/0.4, lib_range = [0.000932129 0.14624]/[0.000932129 0.14624] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (NangateOpenCellLibrary/DFF_X1) state_reg[1]/CK-->Q (max rising_edge) [r/f slew = 0.4/0.4, lib_range = [0.000932129 0.14624]/[0.000932129 0.14624] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (NangateOpenCellLibrary/DFF_X1) state_reg[0]/CK-->Q (min rising_edge) [r/f slew = 0.4/0.4, lib_range = [0.000932129 0.14624]/[0.000932129 0.14624] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (NangateOpenCellLibrary/DFF_X1) state_reg[0]/CK-->QN (max rising_edge) [r/f slew = 0.4/0.4, lib_range = [0.000932129 0.14624]/[0.000932129 0.14624] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (NangateOpenCellLibrary/DFF_X1) state_reg[1]/CK-->Q (min rising_edge) [r/f slew = 0.4/0.4, lib_range = [0.000932129 0.14624]/[0.000932129 0.14624] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (NangateOpenCellLibrary/DFF_X1) state_reg[0]/CK-->QN (min rising_edge) [r/f slew = 0.4/0.4, lib_range = [0.000932129 0.14624]/[0.000932129 0.14624] (nS)] (RC-011)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : detector110
+Version: P-2019.03-SP3
+Date   : Tue Nov 21 22:55:21 2023
+****************************************
+
+
+  Startpoint: state_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: state_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[1]/CK (DFF_X1)                 0.00       0.00 r
+  state_reg[1]/Q (DFF_X1)                  0.11 *     0.11 f
+  g219/ZN (OR2_X1)                         0.06 *     0.17 f
+  g217/ZN (OAI222_X1)                      0.05 *     0.22 r
+  state_reg[0]/D (DFF_X1)                  0.01 *     0.23 r
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    2.40       2.40
+  clock network delay (ideal)              0.00       2.40
+  clock reconvergence pessimism            0.00       2.40
+  state_reg[0]/CK (DFF_X1)                            2.40 r
+  library setup time                      -0.06 *     2.34
+  data required time                                  2.34
+  ---------------------------------------------------------------
+  data required time                                  2.34
+  data arrival time                                  -0.23
+  ---------------------------------------------------------------
+  slack (MET)                                         2.11
+
+
+1

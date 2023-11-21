@@ -1,0 +1,17 @@
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : detector110
+Version: P-2019.03-SP3
+Date   : Tue Nov 21 22:55:21 2023
+****************************************
+
+
+
+                                      Int      Switch   Leak      Total
+Hierarchy                             Power    Power    Power     Power    %
+--------------------------------------------------------------------------------
+detector110                           1.29e-05 3.94e-06 1.21e-06  1.81e-05 100.0
+1
