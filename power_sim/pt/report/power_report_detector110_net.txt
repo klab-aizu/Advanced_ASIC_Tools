@@ -1,3 +1,6 @@
+Warning: Zero transition time will be used at to pins of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-066)
+Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
+Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
 Information: Running averaged power analysis... (PWR-601)
 Information: Running power calculation with 4 threads. (PWR-602)
 ****************************************
@@ -5,7 +8,7 @@ Report : Averaged Power
 	-hierarchy
 Design : detector110
 Version: P-2019.03-SP3
-Date   : Tue Nov 21 22:55:21 2023
+Date   : Wed Nov 22 11:43:39 2023
 ****************************************
 
 
@@ -13,5 +16,5 @@ Date   : Tue Nov 21 22:55:21 2023
                                       Int      Switch   Leak      Total
 Hierarchy                             Power    Power    Power     Power    %
 --------------------------------------------------------------------------------
-detector110                           1.29e-05 3.94e-06 1.21e-06  1.81e-05 100.0
+detector110                           9.13e-06 1.46e-07 1.18e-06  1.05e-05 100.0
 1
