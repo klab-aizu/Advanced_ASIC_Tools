@@ -16,10 +16,35 @@ Information: Total simulation time = 26.000000 ns
 ****************************************
 Report : Time Based Power
 	-hierarchy
+	-verbose
 Design : detector110
 Version: P-2019.03-SP3
-Date   : Thu Nov 23 12:10:30 2023
+Date   : Thu Nov 23 12:18:04 2023
 ****************************************
+
+Sampling Interval: 0.001 ns
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/khanh/lib/slow.db)
+    dw_foundation.sldb (File: /home/khanh/lib/dw_foundation.sldb)
+
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   detector110  5K_hvratio_1_1
+                                            NangateOpenCellLibrary
+                                                          library default
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
 
 
 

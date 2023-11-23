@@ -50,7 +50,7 @@ read_vcd ./input_files/$vcd_file -strip_path "detector110_tester/UUT"
 
 #report_timing > ./report/timing_report_${base_name}.txt
 #report_reference -hier > ./report/reference_report_${base_name}.txt
-report_power -hier > ./report/power_report_${base_name}.txt
+report_power -verbose -hier > ./report/power_report_${base_name}.txt
 #redirect –tee –append ./EW.log {print_message_info}
 quit
 
