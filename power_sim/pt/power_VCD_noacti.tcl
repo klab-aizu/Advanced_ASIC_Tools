@@ -9,7 +9,7 @@ set sdc_file  "${design_name}_${model_name}.sdc"
 set sdf_file  "${design_name}_${model_name}.sdf"
 set spef_file "${design_name}_${model_name}.spef"
 set saif_file "${design_name}.saif"
-set vcd_file "${design_name}_vsim.vcd"
+set vcd_file "${design_name}_noacti.vcd"
 
 #
 # Libraries

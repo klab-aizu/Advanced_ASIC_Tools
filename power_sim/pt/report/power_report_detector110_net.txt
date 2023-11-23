@@ -1,14 +1,24 @@
 Warning: Zero transition time will be used at to pins of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-066)
 Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
 Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
-Information: Running averaged power analysis... (PWR-601)
-Information: Running power calculation with 4 threads. (PWR-602)
+Information: Running time_based power analysis... (PWR-601)
+Information: The waveform options are:
+		File name:	primetime_px.fsdb
+		File format:	fsdb
+		Time interval:	0.001ns
+		Hierarchical level:	all
+
+Information: Power analysis is running, please wait ...
+
+Information: analysis is done for time window (0ns - 26ns)
+
+Information: Total simulation time = 26.000000 ns
 ****************************************
-Report : Averaged Power
+Report : Time Based Power
 	-hierarchy
 Design : detector110
 Version: P-2019.03-SP3
-Date   : Wed Nov 22 11:43:39 2023
+Date   : Thu Nov 23 11:50:25 2023
 ****************************************
 
 
@@ -16,5 +26,11 @@ Date   : Wed Nov 22 11:43:39 2023
                                       Int      Switch   Leak      Total
 Hierarchy                             Power    Power    Power     Power    %
 --------------------------------------------------------------------------------
-detector110                           9.13e-06 1.46e-07 1.18e-06  1.05e-05 100.0
+detector110                           1.51e-05 3.88e-06 1.18e-06  2.02e-05 100.0
+
+
+                                      Peak     Peak            Glitch   X-tran
+Hierarchy                             Power    Time            Power    Power
+--------------------------------------------------------------------------------
+detector110                           2.06e-03  16.000-16.001     0.000    0.000
 1

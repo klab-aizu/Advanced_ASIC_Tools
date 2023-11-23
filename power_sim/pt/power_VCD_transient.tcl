@@ -9,7 +9,7 @@ set sdc_file  "${design_name}_${model_name}.sdc"
 set sdf_file  "${design_name}_${model_name}.sdf"
 set spef_file "${design_name}_${model_name}.spef"
 set saif_file "${design_name}.saif"
-set vcd_file "${design_name}_vsim.vcd"
+set vcd_file "${design_name}_dump.vcd"
 
 #
 # Libraries
@@ -21,7 +21,7 @@ set symbol_library "~/lib/generic.sdb"
 
 set power_enable_analysis "true"
 set report_default_significant_digit 6
-
+set power_analysis_mode time_based
 #
 # Read post-layout netlist
 #
@@ -52,5 +52,6 @@ read_vcd ./input_files/$vcd_file -strip_path "detector110_tester/UUT"
 #report_reference -hier > ./report/reference_report_${base_name}.txt
 report_power -hier > ./report/power_report_${base_name}.txt
 #redirect –tee –append ./EW.log {print_message_info}
-quit
+#quit
 
+start_gui
