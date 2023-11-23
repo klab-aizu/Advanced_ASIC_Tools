@@ -1,5 +1,5 @@
 $date
-	Tue Nov 21 22:27:03 2023
+	Thu Nov 23 22:12:41 2023
 $end
 $version
 	ModelSim Version 2020.2
@@ -22,101 +22,95 @@ $var wire 1 ( a $end
 $var wire 1 ) clk $end
 $var wire 1 * reset $end
 $var wire 1 ' w $end
-$var wire 1 + state [1] $end
-$var wire 1 , state [0] $end
-$var wire 1 - UNCONNECTED $end
-$var wire 1 . n_0 $end
-$var wire 1 / n_2 $end
-$var wire 1 0 n_3 $end
-$var wire 1 1 n_4 $end
-$var wire 1 2 n_5 $end
-$var wire 1 3 n_6 $end
-$var wire 1 4 n_7 $end
-$var wire 1 5 n_8 $end
+$var wire 1 + N18 $end
+$var wire 1 , N19 $end
+$var wire 1 - N20 $end
+$var wire 1 . n1 $end
+$var wire 1 / n2 $end
+$var wire 1 0 n3 $end
+$var wire 1 1 n4 $end
+$var wire 1 2 n5 $end
+$var wire 1 3 n6 $end
+$var wire 1 4 state [1] $end
+$var wire 1 5 state [0] $end
 
 $scope module state_reg[0] $end
 $var wire 1 6 D $end
-$var wire 1 ) CK $end
-$var wire 1 , Q $end
-$var wire 1 0 QN $end
-$var reg 1 7 NOTIFIER $end
-$var wire 1 8 IQ $end
-$var wire 1 9 nextstate $end
-$var wire 1 : IQN $end
+$var wire 1 7 CK $end
+$var wire 1 5 Q $end
+$var wire 1 / QN $end
+$var reg 1 8 NOTIFIER $end
+$var wire 1 9 IQ $end
+$var wire 1 : nextstate $end
+$var wire 1 ; IQN $end
 $upscope $end
 
 $scope module state_reg[1] $end
-$var wire 1 ; D $end
-$var wire 1 ) CK $end
-$var wire 1 + Q $end
-$var wire 1 - QN $end
-$var reg 1 < NOTIFIER $end
-$var wire 1 = IQ $end
-$var wire 1 > nextstate $end
-$var wire 1 ? IQN $end
+$var wire 1 < D $end
+$var wire 1 = CK $end
+$var wire 1 4 Q $end
+$var wire 1 . QN $end
+$var reg 1 > NOTIFIER $end
+$var wire 1 ? IQ $end
+$var wire 1 @ nextstate $end
+$var wire 1 A IQN $end
 $upscope $end
 
-$scope module g218 $end
-$var wire 1 @ A $end
-$var wire 1 A B1 $end
-$var wire 1 B B2 $end
-$var wire 1 5 ZN $end
-$var wire 1 C i_8 $end
-$var wire 1 D i_9 $end
+$scope module U9 $end
+$var wire 1 B A1 $end
+$var wire 1 C A2 $end
+$var wire 1 D A3 $end
+$var wire 1 1 ZN $end
+$var wire 1 E i_8 $end
+$var wire 1 F i_9 $end
 $upscope $end
 
-$scope module g217 $end
-$var wire 1 E A1 $end
-$var wire 1 F A2 $end
-$var wire 1 G B1 $end
-$var wire 1 H B2 $end
-$var wire 1 I C1 $end
-$var wire 1 J C2 $end
-$var wire 1 4 ZN $end
-$var wire 1 K i_20 $end
-$var wire 1 L i_21 $end
-$var wire 1 M i_24 $end
-$var wire 1 N i_22 $end
-$var wire 1 O i_23 $end
+$scope module U10 $end
+$var wire 1 G A1 $end
+$var wire 1 H A2 $end
+$var wire 1 - ZN $end
+$var wire 1 I i_10 $end
 $upscope $end
 
-$scope module g219 $end
-$var wire 1 P A1 $end
-$var wire 1 Q A2 $end
-$var wire 1 2 ZN $end
+$scope module U11 $end
+$var wire 1 J A $end
+$var wire 1 K B1 $end
+$var wire 1 L B2 $end
+$var wire 1 , ZN $end
+$var wire 1 M i_8 $end
+$var wire 1 N i_9 $end
 $upscope $end
 
-$scope module g220 $end
+$scope module U12 $end
+$var wire 1 O A1 $end
+$var wire 1 P A2 $end
+$var wire 1 0 ZN $end
+$var wire 1 Q i_10 $end
+$upscope $end
+
+$scope module U13 $end
 $var wire 1 R A1 $end
 $var wire 1 S A2 $end
-$var wire 1 T A3 $end
+$var wire 1 + ZN $end
+$var wire 1 T i_10 $end
+$upscope $end
+
+$scope module U14 $end
+$var wire 1 U A1 $end
+$var wire 1 V A2 $end
+$var wire 1 W B1 $end
+$var wire 1 X B2 $end
+$var wire 1 2 ZN $end
+$var wire 1 Y i_12 $end
+$var wire 1 Z i_13 $end
+$var wire 1 [ i_14 $end
+$upscope $end
+
+$scope module U15 $end
+$var wire 1 \ A $end
+$var wire 1 ] B $end
 $var wire 1 3 ZN $end
-$var wire 1 U i_8 $end
-$var wire 1 V i_9 $end
-$upscope $end
-
-$scope module g221 $end
-$var wire 1 W A1 $end
-$var wire 1 X A2 $end
-$var wire 1 1 ZN $end
-$var wire 1 Y i_10 $end
-$upscope $end
-
-$scope module g222 $end
-$var wire 1 Z A $end
-$var wire 1 ' ZN $end
-$upscope $end
-
-$scope module g223 $end
-$var wire 1 [ A1 $end
-$var wire 1 \ A2 $end
-$var wire 1 . ZN $end
-$var wire 1 ] i_10 $end
-$upscope $end
-
-$scope module g224 $end
-$var wire 1 ^ A $end
-$var wire 1 / ZN $end
+$var wire 1 ^ i_4 $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -126,14 +120,14 @@ $dumpvars
 0$
 1%
 0&
-x7
-x<
+x8
+x>
 b1 !
 b1 "
 b0 #
 x'
-x,
 x+
+x,
 x-
 x.
 x/
@@ -141,479 +135,599 @@ x0
 x1
 x2
 x3
-x4
 x5
-x8
+x4
 x9
 x:
-x=
-x>
+x;
 x?
-xC
-xD
-xK
-xL
+x@
+xA
+xE
+xF
+xI
 xM
 xN
-xO
-xU
-xV
+xQ
+xT
 xY
-x]
+xZ
+x[
+x^
 1*
 0)
 0(
 x6
-x;
-x@
-xA
+x7
+x<
+x=
 xB
-xE
-xF
+xC
+xD
 xG
 xH
-xI
 xJ
+xK
+xL
+xO
 xP
-xQ
 xR
 xS
-xT
+xU
+xV
 xW
 xX
-xZ
-x[
 x\
-x^
+x]
 $end
-#12
-1^
+#8
+0=
+07
 #14
-0X
-0Y
-0F
-#19
-0/
-#30
-11
-#33
-0W
-0T
-0U
-#39
-1Q
-#44
+0D
+0E
 1J
 1M
-#57
-13
-#70
-1E
-1N
-#71
-12
-1@
-#84
-1G
-1O
-1L
-1K
-#85
-1A
-1D
-1C
-#99
-05
-#104
-04
-#108
-0;
-0>
-#113
+#15
+0X
+0[
+1R
+1T
+#20
+0+
+#21
+0]
+0,
+#29
 06
-09
+0:
+#30
+11
+0<
+0@
+#42
+1L
 #1000
 1$
 1)
-0=
-1?
-08
-1:
-#1082
-1-
-#1095
-10
-#1108
-0,
-#1109
-1S
-1B
-#1110
-0+
-#1119
-0P
-#1122
-0\
-0]
-0H
-#1125
-0[
-0R
-0V
-#1144
+#1009
+1=
+17
+0?
+1A
+09
+1;
+#1084
+1/
+#1085
 1.
-#1157
+#1088
+04
+05
+#1099
+0O
+0Q
+#1100
+1V
+1P
+1H
 1I
-#1158
-1Z
-#1163
+1C
+0B
+0F
+#1101
+1G
+#1105
+1\
+1^
+#1113
+10
+0-
 0'
+#1122
+03
+#1125
+1K
+1N
+#1126
+0W
+#1133
+0U
+0Z
+0Y
+#1155
+12
+#1167
+1S
 #2000
 0$
 0)
+#2008
+0=
+07
 #3000
 1$
 1)
+#3009
+1=
+17
 #4000
 0$
 0)
+#4008
+0=
+07
 #5000
 1$
 1)
+#5009
+1=
+17
 #6000
 0%
 0$
 0*
 0)
+#6008
+0=
+07
 #6012
-0^
-#6026
-1/
-#6040
-1W
-1T
+0R
+#6013
+0J
 #7000
 1$
 1)
+#7009
+1=
+17
 #8000
 1&
 0$
 1(
 0)
-#8014
+#8008
+0=
+07
+#8015
 1X
+#8016
+1D
+#8023
+1]
+0^
+#8059
+13
+#8071
+1U
+1Z
 1Y
-1F
-#8028
-01
-#8037
-0Q
-#8042
-0J
-#8091
+#8088
 02
-#8104
-0G
-0O
-0L
-0K
-#8105
-0A
-#8144
-14
-#8153
+#8100
+0S
+0T
+#8129
+1+
+#8138
 16
-19
+1:
 #9000
 1$
 1)
-18
-0:
-#9097
-00
-#9111
-0S
-0B
-0D
-0C
-#9118
-1,
-#9132
-1\
-1H
-1O
-1L
-1K
-#9143
+#9009
+1=
+17
+19
+0;
+#9082
+0/
+#9095
 15
-#9152
-1;
-1>
-#9157
-04
-#9166
+#9096
+0V
+0Z
+0Y
+0P
+#9097
+0H
+#9107
+1B
+1F
+1E
+#9124
+01
+#9131
+12
+#9135
+0L
+0N
+0M
+#9143
+1S
+1T
+#9155
+0+
+#9164
 06
-09
+0:
+#9165
+1,
+#9174
+1<
+1@
 #10000
 0$
 0)
+#10008
+0=
+07
 #11000
 1$
 1)
+#11009
 1=
-0?
-08
-1:
-#11085
-0-
-#11095
-10
-#11108
-0,
-#11109
-1S
-1B
-1D
-1C
-#11121
-1+
-#11122
-0\
-0H
-0O
-0L
-0K
-#11126
-05
-#11130
-1P
-#11135
-0;
-0>
-#11136
-1[
-1R
-1V
-1U
-#11161
-12
-03
-#11166
-14
-#11174
-1G
-1O
-1L
-1K
-0E
-#11175
-1A
-0@
-0C
-16
-19
-#11197
-15
-#11201
-04
-#11206
-1;
-1>
-#11210
-06
+17
+1?
+0A
 09
+1;
+#11083
+0.
+#11084
+1/
+#11088
+05
+#11095
+14
+#11097
+0G
+0I
+#11098
+0C
+0F
+0E
+#11100
+1V
+1Z
+1Y
+1P
+1H
+1I
+0B
+#11102
+0\
+1^
+#11107
+1O
+1Q
+#11118
+02
+#11119
+00
+#11121
+11
+#11130
+0S
+0T
+0K
+#11133
+1L
+#11144
+03
+#11155
+0U
+0Z
+0Y
+#11159
+1+
+#11168
+16
+1:
+#11182
+12
+#11194
+1S
+1T
+#11206
+0+
+#11215
+06
+0:
 #12000
 0$
 0)
+#12008
+0=
+07
 #13000
 1$
 1)
+#13009
+1=
+17
 #14000
 0&
 0$
 0(
 0)
+#14008
+0=
+07
 #14014
+0D
+#14015
 0X
-0Y
-0F
-0N
-0L
-0K
-#14030
-11
-#14039
-1Q
-#14042
-14
-#14044
-1J
+#14021
+0]
+0^
 #14051
+13
+#14063
+1U
+1Z
+1Y
+#14080
+02
+#14092
+0S
+0T
+#14121
+1+
+#14130
 16
-19
+1:
 #15000
 1$
 1)
-18
-0:
-#15097
-00
-#15111
-0S
-0V
-0U
-0B
-#15118
-1,
-#15132
-1\
-1]
-1H
-#15138
-13
-#15151
-0.
-1E
-1N
-1L
-1K
-#15152
-1@
-1C
-#15164
-0I
-#15165
-0Z
-#15167
-04
-#15169
-05
-#15174
-1'
-#15176
-06
-09
-#15178
+#15009
+1=
+17
+19
 0;
-0>
+#15082
+0/
+#15095
+15
+#15096
+0V
+0Z
+0Y
+0P
+0Q
+#15097
+0H
+0I
+#15107
+1B
+#15117
+10
+#15125
+12
+#15129
+1K
+1N
+1M
+#15131
+1-
+1'
+#15137
+1S
+1T
+#15142
+0,
+#15145
+1W
+#15149
+0+
+#15151
+0<
+0@
+#15158
+06
+0:
 #16000
 0$
 0)
+#16008
+0=
+07
 #17000
 1$
 1)
-0=
-1?
-08
-1:
-#17082
-1-
-#17095
-10
-#17108
-0,
-#17109
-1S
-1V
-1U
-1B
-#17110
-0+
-#17119
-0P
-#17122
-0\
-0]
-0H
-#17125
-0[
-0R
-0V
-0U
-#17144
+#17009
+1=
+17
+0?
+1A
+09
+1;
+#17084
+1/
+#17085
 1.
-#17157
-1I
-#17158
+#17088
+04
+05
+#17099
+0O
+#17100
+1V
 1Z
-#17163
+1Y
+1P
+1H
+1I
+1C
+1F
+0B
+0F
+#17101
+1G
+#17105
+1\
+1^
+#17113
+0-
 0'
+#17118
+02
+#17122
+03
+#17126
+0W
+#17130
+0S
+0T
+#17133
+0U
+0Z
+0Y
+#17155
+12
+#17159
+1+
+#17167
+1S
+1T
+#17168
+16
+1:
+#17179
+0+
+#17188
+06
+0:
 #18000
 0$
 0)
+#18008
+0=
+07
 #19000
 1$
 1)
+#19009
+1=
+17
 #20000
 0$
 0)
+#20008
+0=
+07
 #21000
 1$
 1)
+#21009
+1=
+17
 #22000
 0$
 0)
+#22008
+0=
+07
 #23000
 1$
 1)
+#23009
+1=
+17
 #24000
 1&
 0$
 1(
 0)
-#24014
+#24008
+0=
+07
+#24015
 1X
+#24016
+1D
+#24023
+1]
+0^
+#24059
+13
+#24071
+1U
+1Z
 1Y
-1F
-#24028
-01
-#24037
-0Q
-#24042
-0J
-#24091
+#24088
 02
-#24104
-0G
-0O
-0L
-0K
-#24105
-0A
-#24144
-14
-#24153
+#24100
+0S
+0T
+#24129
+1+
+#24138
 16
-19
+1:
 #25000
 1$
 1)
-18
-0:
-#25097
-00
-#25111
-0S
-0B
-0D
-0C
-#25118
-1,
-#25132
-1\
-1H
-1O
-1L
-1K
-#25143
+#25009
+1=
+17
+19
+0;
+#25082
+0/
+#25095
 15
-#25152
-1;
-1>
-#25157
-04
-#25166
+#25096
+0V
+0Z
+0Y
+0P
+#25097
+0H
+#25107
+1B
+1F
+1E
+#25124
+01
+#25131
+12
+#25135
+0L
+0N
+0M
+#25143
+1S
+1T
+#25155
+0+
+#25164
 06
-09
+0:
+#25165
+1,
+#25174
+1<
+1@
 #26000
 0&

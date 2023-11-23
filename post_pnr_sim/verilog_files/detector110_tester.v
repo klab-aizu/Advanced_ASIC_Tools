@@ -1,7 +1,9 @@
 `define CLK_PERIOD 2000
 
 module detector110_tester;
-   parameter _QUIT = 0;
+   parameter _QUIT = 1;
+   parameter _DUMPVCD = 1;
+   parameter _NOACTI = 0;
    reg clk;
    reg rst_n;
    reg aa;
@@ -16,8 +18,10 @@ module detector110_tester;
       );
 
    initial begin
-      $dumpfile("detector110.vcd");
-      $dumpvars(0, detector110_tester);
+      if (_DUMPVCD == 1) begin
+        $dumpfile("detector110_dump.vcd");
+        $dumpvars(0, detector110_tester);
+      end
       aa = 1'b0;
       rst_n = 1'b1;
       clk = 1'b0;
@@ -25,11 +29,13 @@ module detector110_tester;
       rst_n = 1'b0;
 
       #(1*`CLK_PERIOD);
-      aa = 1'b1;
+      if (_NOACTI == 0)
+        aa = 1'b1;
       #(3*`CLK_PERIOD);
       aa = 1'b0;
       #(5*`CLK_PERIOD);
-      aa = 1'b1;
+      if (_NOACTI == 0)
+        aa = 1'b1;
       #(1*`CLK_PERIOD);
       aa = 1'b0;
 

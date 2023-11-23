@@ -1,21 +1,14 @@
-# ####################################################################
+###################################################################
 
-#  Created by Genus(TM) Synthesis Solution 18.13-s027_1 on Tue Nov 21 22:19:20 JST 2023
+# Created by write_sdc on Thu Nov 23 22:11:12 2023
 
-# ####################################################################
+###################################################################
+set sdc_version 2.1
 
-set sdc_version 2.0
-
-set_units -capacitance 1.0fF
-set_units -time 1000.0ps
-
-# Set the current design
-#current_design detector110
-
-create_clock -name "clk" -period 2.4 -waveform {0.0 1.2} [get_ports clk]
-set_clock_transition 0.4 [get_clocks clk]
-set_clock_gating_check -setup 0.0 
-set_input_delay -clock [get_clocks clk] -add_delay 0.0001 [get_ports reset]
-set_input_delay -clock [get_clocks clk] -add_delay 0.0001 [get_ports clk]
-set_input_delay -clock [get_clocks clk] -add_delay 0.0001 [get_ports a]
-set_output_delay -clock [get_clocks clk] -add_delay 0.0001 [get_ports w]
+set_units -time ns -resistance MOhm -capacitance fF -voltage V -current mA
+set_wire_load_model -name 5K_hvratio_1_1 -library NangateOpenCellLibrary
+create_clock [get_ports clk]  -period 2  -waveform {0 1}
+set_clock_uncertainty 0.004  [get_clocks clk]
+set_input_delay -clock clk  0.1  [get_ports a]
+set_input_delay -clock clk  0.1  [get_ports reset]
+set_output_delay -clock clk  0.1  [get_ports w]

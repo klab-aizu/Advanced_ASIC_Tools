@@ -35,7 +35,7 @@ link
 #
 # Delay and RC information
 #
-#read_sdc ./input_files/$sdc_file
+read_sdc ./input_files/$sdc_file
 read_sdf ./input_files/$sdf_file
 read_parasitics ./input_files/$spef_file
 
@@ -49,7 +49,7 @@ read_parasitics ./input_files/$spef_file
 read_vcd ./input_files/$vcd_file -strip_path "detector110_tester/UUT"
 
 set_power_analysis_options -waveform_format out -waveform_output ./report/power_waveform_${base_name}
-#report_timing > ./report/timing_report_${base_name}.txt
+report_timing > ./report/timing_report_${base_name}.txt
 #report_reference -hier > ./report/reference_report_${base_name}.txt
 report_power -verbose -hier > ./report/power_report_${base_name}.txt
 #redirect –tee –append ./EW.log {print_message_info}
