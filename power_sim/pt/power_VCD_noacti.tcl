@@ -14,7 +14,7 @@ set vcd_file "${design_name}_noacti.vcd"
 #
 # Libraries
 #
-set target_library "~/lib/slow.db"
+set target_library "~/lib/typical.db"
 set synthetic_library "~/lib/dw_foundation.sldb"
 set link_library [concat "*" $target_library $synthetic_library]
 set symbol_library "~/lib/generic.sdb"
@@ -34,7 +34,7 @@ link
 #
 # Delay and RC information
 #
-#read_sdc ./input_files/$sdc_file
+read_sdc ./input_files/$sdc_file
 read_sdf ./input_files/$sdf_file
 read_parasitics ./input_files/$spef_file
 
@@ -48,7 +48,7 @@ read_parasitics ./input_files/$spef_file
 read_vcd ./input_files/$vcd_file -strip_path "detector110_tester/UUT"
 
 
-#report_timing > ./report/timing_report_${base_name}.txt
+report_timing > ./report/timing_report_${base_name}.txt
 #report_reference -hier > ./report/reference_report_${base_name}.txt
 report_power -verbose -hier > ./report/power_report_${base_name}.txt
 #redirect –tee –append ./EW.log {print_message_info}

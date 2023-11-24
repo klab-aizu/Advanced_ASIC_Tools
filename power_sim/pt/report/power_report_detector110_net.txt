@@ -1,33 +1,22 @@
-Information: Running time_based power analysis... (PWR-601)
-Information: The waveform options are:
-		File name:	./report/power_waveform_detector110_net.out
-		File format:	out
-		Time interval:	0.001ns
-		Hierarchical level:	all
-
-Information: Power analysis is running, please wait ...
-
-Information: analysis is done for time window (0ns - 26ns)
-
-Information: Total simulation time = 26.000000 ns
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
 ****************************************
-Report : Time Based Power
+Report : Averaged Power
 	-hierarchy
 	-verbose
 Design : detector110
 Version: P-2019.03-SP3
-Date   : Thu Nov 23 22:17:03 2023
+Date   : Fri Nov 24 11:18:45 2023
 ****************************************
-
-Sampling Interval: 0.001 ns
 
 Library(s) Used:
 
-    NangateOpenCellLibrary (File: /home/khanh/lib/slow.db)
+    NangateOpenCellLibrary (File: /home/khanh/lib/typical.db)
     dw_foundation.sldb (File: /home/khanh/lib/dw_foundation.sldb)
 
 
-Operating Conditions: fast   Library: NangateOpenCellLibrary
+Operating Conditions: typical   Library: NangateOpenCellLibrary
 Wire Load Model Mode: top
 
 Cell               Design       Wire_model  Library       Selection_type
@@ -48,11 +37,5 @@ Power-specific unit information :
                                       Int      Switch   Leak      Total
 Hierarchy                             Power    Power    Power     Power    %
 --------------------------------------------------------------------------------
-detector110                           1.54e-05 3.53e-06 1.08e-06  2.00e-05 100.0
-
-
-                                      Peak     Peak            Glitch   X-tran
-Hierarchy                             Power    Time            Power    Power
---------------------------------------------------------------------------------
-detector110                           2.00e-03  16.000-16.001     0.000    0.000
+detector110                           8.86e-06 2.33e-06 3.45e-07  1.15e-05 100.0
 1

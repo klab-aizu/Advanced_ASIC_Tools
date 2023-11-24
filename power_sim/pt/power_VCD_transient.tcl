@@ -14,7 +14,7 @@ set vcd_file "${design_name}_dump.vcd"
 #
 # Libraries
 #
-set target_library "~/lib/slow.db"
+set target_library "~/lib/typical.db"
 set synthetic_library "~/lib/dw_foundation.sldb"
 set link_library [concat "*" $target_library $synthetic_library]
 set symbol_library "~/lib/generic.sdb"
@@ -52,6 +52,5 @@ set_power_analysis_options -waveform_format out -waveform_output ./report/power_
 report_timing > ./report/timing_report_${base_name}.txt
 #report_reference -hier > ./report/reference_report_${base_name}.txt
 report_power -verbose -hier > ./report/power_report_${base_name}.txt
-#redirect –tee –append ./EW.log {print_message_info}
 quit
 
