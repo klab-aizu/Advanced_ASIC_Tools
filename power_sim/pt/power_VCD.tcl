@@ -14,10 +14,10 @@ set vcd_file "${design_name}_vsim.vcd"
 #
 # Libraries
 #
-set target_library "~/lib/typical.db"
-set synthetic_library "~/lib/dw_foundation.sldb"
+set target_library "/home/lib/typical.db"
+set synthetic_library "/home/lib/dw_foundation.sldb"
 set link_library [concat "*" $target_library $synthetic_library]
-set symbol_library "~/lib/generic.sdb"
+set symbol_library "/home/lib/generic.sdb"
 
 set power_enable_analysis "true"
 set report_default_significant_digit 6
